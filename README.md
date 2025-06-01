@@ -1,40 +1,74 @@
-<<<<<<< HEAD
-# Review-Sentiment-Analysis
+# Review Sentiment Analysis 🧠🔍
 
-Uses Multinomial Naive Bayes algorithm to classify customer reviews into positive, negative and complaints.
+This project is a Sentiment Analysis tool built using Natural Language Processing (NLP) techniques to classify customer reviews as **positive**, **negative**, or **neutral**. It helps businesses and platforms understand customer feedback at scale.
 
-Run sentiment_analyser.ipynb to see the results
+---
 
-Dataset is available at: 
-  https://drive.google.com/open?id=1VfxUSRxRsEBt-thnU8ge7vnIlLmOHuSx
+## 🔧 Tech Stack
 
-Obtained the dataset from: 
-  https://www.kaggle.com/datafiniti/consumer-reviews-of-amazon-products
-  https://www.kaggle.com/shitalkat/amazonearphonesreviews
-      
-## Instructions
-#### 1. Download dataset
-        Download dataset from the link and paste the downloaded directory 'amazon_reviews' in the directory named 'datasets'.
-        https://drive.google.com/open?id=1VfxUSRxRsEBt-thnU8ge7vnIlLmOHuSx
-#### 2. Install requirements
-        1. pip install -r requirements.txt
-        2. Download spacy language model using the command 'python3 -m spacy download en'
-        3. Download nltk stopwords using the command 'python3 -m nltk.downloader stopwords'
-        4. Download nltk vader lexicon using the command 'python3 -m nltk.downloader vader_lexicon'
-        4. Enter the command '$ jupyter notebook' to start jupyter notebook to run the following files
-#### 3. Run the files
-        1. prepare_dataset.ipynb
-            Prepares the datasets from csv files, filter outs unwanted columns, etc.
-        
-        2. feature_extraction.ipynb
-            Performs data cleaning, extracts features from the prepared dataset,and creates training and testing datasets
-        
-        3. MulinomialNB.ipynb
-            Creates a Multinomial Naive Bayes model from the training data
-        
-        4. sentiment_analyser.ipynb
-            Performs sentiment analysis on the given text using the model created.
-            The function sentiment_analysis(text) gives the sentiment of the text argument passed
-=======
-# Review-Sentiment-Analysis
->>>>>>> 00178a1395449a2068b5ae0225902e5a37dd52c1
+- 🐍 Python  
+- 📦 Libraries: `scikit-learn`, `pandas`, `matplotlib`, `nltk`, `seaborn`  
+- 💬 NLP: Tokenization, TF-IDF, Stopword Removal  
+- 📊 Models: Naive Bayes, Logistic Regression, Support Vector Machine
+
+---
+
+## 🚀 Features
+
+- Cleaned and preprocessed customer reviews dataset  
+- Applied NLP pipeline (stopwords, stemming, vectorization)  
+- Trained and compared multiple ML models  
+- Visualized performance using confusion matrix & accuracy  
+- Predict sentiment of custom input reviews
+
+---
+
+## 📁 Project Structure
+
+Review-Sentiment-Analysis/
+│
+├── data/ # Raw and cleaned review data
+├── notebooks/ # Jupyter notebooks for EDA and modeling
+├── models/ # Saved ML models (if any)
+├── app.py # Script for running sentiment prediction
+├── requirements.txt # Project dependencies
+└── README.md # Project overview (this file)
+
+yaml
+Copy
+Edit
+
+---
+
+## 📊 Example Output
+
+Input: "The product quality is really amazing!"
+Predicted Sentiment: Positive ✅
+
+yaml
+Copy
+Edit
+
+---
+
+## 🧠 Learnings
+
+- Applied full NLP pipeline: cleaning → vectorization → classification  
+- Compared multiple models for accuracy and F1-score  
+- Learned about real-world text preprocessing challenges  
+- Improved model interpretability with confusion matrices
+
+---
+
+## 👤 Author
+
+**Aaryan Singh**  
+📧 aaryansingh1068@gmail.com  
+🌐 [LinkedIn](https://www.linkedin.com/in/aaryansingh1068)  
+💻 [GitHub](https://github.com/AaryanSingh10)
+
+---
+
+## 📜 License
+
+This project is for educational and demonstration purposes. You are welcome to fork and build upon it.
