@@ -27,16 +27,14 @@ This project is a Sentiment Analysis tool built using Natural Language Processin
 
 Review-Sentiment-Analysis/
 │
-├── data/ # Raw and cleaned review data
+├── data/ # Raw and cleaned review data 
 ├── notebooks/ # Jupyter notebooks for EDA and modeling
 ├── models/ # Saved ML models (if any)
 ├── app.py # Script for running sentiment prediction
 ├── requirements.txt # Project dependencies
 └── README.md # Project overview (this file)
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -44,10 +42,6 @@ Edit
 
 Input: "The product quality is really amazing!"
 Predicted Sentiment: Positive ✅
-
-yaml
-Copy
-Edit
 
 ---
 
